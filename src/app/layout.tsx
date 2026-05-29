@@ -91,6 +91,29 @@ export default function RootLayout({
             `,
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "NEXUS COSMOS",
+              "operatingSystem": "All (Web-based)",
+              "applicationCategory": "EducationalApplication",
+              "description": "AI-Powered Space Intelligence Operating System. Track the International Space Station, explore WebGL 3D planets, query space weather charts, and chat with a Gemini AI astronomy assistant.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Sahil Gaund",
+                "url": "https://www.linkedin.com/in/sahilgaund03"
+              }
+            })
+          }}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
