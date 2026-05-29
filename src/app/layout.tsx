@@ -79,6 +79,18 @@ export default function RootLayout({
     >
       <head>
         <meta name="google-site-verification" content="u2MdUjL6aTeE_R0wOt9GqkizXZFqRxvQaR6mm8L58TI" />
+        {/* Google Analytics (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6DWGD9CL5"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-G6DWGD9CL5');
+            `,
+          }}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
