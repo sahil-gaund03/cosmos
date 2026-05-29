@@ -19,6 +19,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nexus-cosmos.vercel.app"),
   title: "NEXUS COSMOS | AI-Powered Space Intelligence Operating System",
   description:
     "Track the ISS, explore NASA imagery, and interact with AI-powered astronomy systems. The universe, decoded. A futuristic AI-powered NASA intelligence operating system.",
@@ -31,22 +32,31 @@ export const metadata: Metadata = {
     "satellite tracking",
     "rocket launches",
     "solar system",
-    "solar system",
     "space intelligence",
   ],
   authors: [{ name: "NEXUS COSMOS" }],
   openGraph: {
-    title: "NEXUS COSMOS | AI-Powered Space Intelligence",
+    title: "NEXUS COSMOS | AI-Powered Space Intelligence Operating System",
     description:
-      "Track the ISS, explore NASA imagery, and interact with AI-powered astronomy systems.",
+      "Track the ISS, explore NASA imagery, and interact with AI-powered astronomy systems. The universe, decoded. A futuristic AI-powered NASA intelligence operating system.",
     type: "website",
     siteName: "NEXUS COSMOS",
-    images: [{ url: "/images/hero-earth.png", width: 1200, height: 630, alt: "NEXUS COSMOS Earth Preview" }],
+    url: "https://nexus-cosmos.vercel.app/",
+    images: [
+      {
+        url: "/images/hero-earth.png",
+        width: 1200,
+        height: 630,
+        alt: "NEXUS COSMOS Earth Preview",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NEXUS COSMOS",
-    description: "AI-Powered Space Intelligence Operating System",
+    title: "NEXUS COSMOS | AI-Powered Space Intelligence Operating System",
+    description:
+      "Track the ISS, explore NASA imagery, and interact with AI-powered astronomy systems. The universe, decoded. A futuristic AI-powered NASA intelligence operating system.",
+    images: ["/images/hero-earth.png"],
   },
 };
 
