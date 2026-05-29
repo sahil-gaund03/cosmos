@@ -44,11 +44,10 @@ export default function Navbar() {
         variants={navbarVariants}
         animate={isHidden ? "hidden" : "visible"}
         className={`fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-[1440px] rounded-full
-          ${isScrolled ? "bg-surface/60" : "bg-surface/10"}
-          backdrop-blur-xl border-b border-outline-variant/40
-          shadow-[0_0_12px_rgba(187,195,255,0.15)]
+          ${isScrolled ? "glass-panel-heavy shadow-lg shadow-black/20" : "bg-transparent"}
+          border ${isScrolled ? "border-outline-variant/50" : "border-transparent"}
           flex justify-between items-center px-6 md:px-8 py-3 md:py-4 z-[100]
-          transition-colors duration-500`}
+          transition-all duration-500`}
       >
         {/* Logo */}
         <Link

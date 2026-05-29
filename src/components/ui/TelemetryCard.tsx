@@ -29,12 +29,13 @@ export default function TelemetryCard({
       viewport={{ once: true, amount: 0.3 }}
       transition={{ delay }}
       className={cn(
-        "glass-panel border border-outline-variant/40 p-6 rounded-lg flex flex-col gap-2",
-        "hover:border-primary/50 transition-colors",
+        "glass-panel border border-outline-variant/40 border-l-[3px] border-l-primary/60 p-6 rounded-lg flex flex-col gap-2 relative overflow-hidden group",
+        "hover:border-primary/50 hover:border-l-primary transition-all duration-300",
         className
       )}
     >
-      <div className="flex items-center justify-between">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+      <div className="flex items-center justify-between relative z-10">
         <span className="text-label-caps text-tertiary">{label}</span>
         {live && (
           <div className="flex items-center gap-2">

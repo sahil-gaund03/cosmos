@@ -4,27 +4,30 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { tapScale } from "@/lib/motion";
 import Link from "next/link";
+import React from "react";
 
-interface ButtonProps {
+type BaseProps = {
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "ghost";
   size?: "sm" | "md" | "lg";
   href?: string;
-  onClick?: () => void;
-  className?: string;
-  disabled?: boolean;
   icon?: string;
-}
+  className?: string;
+};
+
+type ButtonAsButton = BaseProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
+type ButtonAsLink = BaseProps & React.AnchorHTMLAttributes<HTMLAnchorElement>;
+
+export type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 export default function Button({
   children,
   variant = "primary",
   size = "md",
   href,
-  onClick,
   className,
-  disabled = false,
   icon,
+  ...props
 }: ButtonProps) {
   const baseClasses = cn(
     "inline-flex items-center justify-center gap-2 rounded-full font-[Geist] text-[12px] font-semibold tracking-[0.1em] uppercase",
@@ -61,7 +64,7 @@ export default function Button({
   if (href) {
     return (
       <motion.div whileTap={tapScale}>
-        <Link href={href} className={baseClasses}>
+        <Link href={href} className={baseClasses} {...(props as any)}>
           {content}
         </Link>
       </motion.div>
@@ -71,9 +74,8 @@ export default function Button({
   return (
     <motion.button
       whileTap={tapScale}
-      onClick={onClick}
-      disabled={disabled}
       className={baseClasses}
+      {...(props as any)}
     >
       {content}
     </motion.button>

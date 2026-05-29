@@ -16,10 +16,12 @@ export const NAV_LINKS = [
   { label: "Home", href: "/", icon: "home" },
   { label: "ISS Tracker", href: "/iss-tracker", icon: "satellite_alt" },
   { label: "NASA Gallery", href: "/nasa-gallery", icon: "photo_library" },
-  { label: "Hubble", href: "/hubble", icon: "auto_awesome" },
   { label: "AI Assistant", href: "/ai-assistant", icon: "smart_toy" },
   { label: "Launches", href: "/launches", icon: "rocket_launch" },
   { label: "Solar System", href: "/solar-system", icon: "public" },
+  { label: "Space Weather", href: "/space-weather", icon: "solar_power" },
+  { label: "Astronauts", href: "/astronauts", icon: "person" },
+  { label: "Timeline", href: "/timeline", icon: "history" },
 ] as const;
 
 // Footer links
@@ -71,12 +73,7 @@ export const PLATFORM_FEATURES = [
     description: "Archival imagery and live deep-space feeds from NASA's vast media library.",
     href: "/nasa-gallery",
   },
-  {
-    icon: "auto_awesome",
-    title: "Hubble Explorer",
-    description: "Voyage through the cosmic horizons captured by Hubble's eye.",
-    href: "/hubble",
-  },
+
   {
     icon: "smart_toy",
     title: "AI Space Assistant",
@@ -94,6 +91,24 @@ export const PLATFORM_FEATURES = [
     title: "Solar System",
     description: "Interactive 3D planetary exploration with real-time orbital mechanics.",
     href: "/solar-system",
+  },
+  {
+    icon: "solar_power",
+    title: "Space Weather",
+    description: "Monitor solar flares, geomagnetic storms, and aurora forecasts in real-time.",
+    href: "/space-weather",
+  },
+  {
+    icon: "person",
+    title: "Astronaut Intel",
+    description: "Track current orbital crew, mission histories, and spacewalk statistics.",
+    href: "/astronauts",
+  },
+  {
+    icon: "history",
+    title: "Space Timeline",
+    description: "Cinematic chronological journey through humanity's greatest space milestones.",
+    href: "/timeline",
   },
 ] as const;
 

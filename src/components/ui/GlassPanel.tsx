@@ -11,7 +11,12 @@ interface GlassPanelProps {
   hoverable?: boolean;
   border?: boolean;
   as?: "div" | "section" | "article";
+  onClick?: React.MouseEventHandler<HTMLElement>;
 }
+
+const MotionDiv = motion.div;
+const MotionSection = motion.section;
+const MotionArticle = motion.article;
 
 export default function GlassPanel({
   children,
@@ -20,8 +25,13 @@ export default function GlassPanel({
   hoverable = false,
   border = true,
   as: Component = "div",
+  onClick,
 }: GlassPanelProps) {
-  const MotionComponent = motion.create(Component);
+  const MotionComponent = Component === "section" 
+    ? MotionSection 
+    : Component === "article" 
+    ? MotionArticle 
+    : MotionDiv;
 
   return (
     <MotionComponent
@@ -30,6 +40,7 @@ export default function GlassPanel({
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
       whileHover={hoverable ? hoverGlow : undefined}
+      onClick={onClick}
       className={cn(
         "glass-panel rounded-lg",
         border && "border border-outline-variant/40",

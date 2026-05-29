@@ -7,18 +7,18 @@
 
 @theme inline {
   /* ---- Mercury Color System ---- */
-  --color-surface: #12121c;
-  --color-surface-dim: #12121c;
+  --color-surface: #171721;
+  --color-surface-dim: #171721;
   --color-surface-bright: #393843;
   --color-surface-container-lowest: #0d0d17;
   --color-surface-container-low: #1b1b25;
-  --color-surface-container: #1f1f29;
+  --color-surface-container: #1e1e2a;
   --color-surface-container-high: #292934;
   --color-surface-container-highest: #34343f;
 
-  --color-on-surface: #e4e1ef;
-  --color-on-surface-variant: #c5c5d7;
-  --color-on-background: #e4e1ef;
+  --color-on-surface: #ededf3;
+  --color-on-surface-variant: #c3c3cc;
+  --color-on-background: #ededf3;
   --color-inverse-surface: #e4e1ef;
   --color-inverse-on-surface: #302f3a;
 
@@ -46,9 +46,9 @@
   --color-on-secondary-fixed: #1a1a26;
   --color-on-secondary-fixed-variant: #464553;
 
-  --color-tertiary: #c7c4d7;
-  --color-on-tertiary: #2f2f3d;
-  --color-tertiary-container: #737283;
+  --color-tertiary: #70707d;
+  --color-on-tertiary: #ededf3;
+  --color-tertiary-container: #454654;
   --color-on-tertiary-container: #fefaff;
   --color-tertiary-fixed: #e3e0f4;
   --color-tertiary-fixed-dim: #c7c4d7;
@@ -60,8 +60,8 @@
   --color-error-container: #93000a;
   --color-on-error-container: #ffdad6;
 
-  --color-background: #12121c;
-  --color-foreground: #e4e1ef;
+  --color-background: #171721;
+  --color-foreground: #ededf3;
 
   /* ---- Mercury Typography ---- */
   --font-sora: "Sora", sans-serif;
@@ -92,11 +92,16 @@ html {
 }
 
 body {
-  background-color: #12121c;
-  color: #e4e1ef;
+  background-color: #171721;
+  color: #ededf3;
   overflow-x: hidden;
-  background: linear-gradient(135deg, #12121c 0%, #1a1b2e 50%, #12121c 100%);
-  background-size: 400% 400%;
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(82, 102, 235, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(187, 195, 255, 0.05) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E"),
+    linear-gradient(135deg, #171721 0%, #1e1e2a 50%, #171721 100%);
+  background-attachment: fixed;
+  background-size: 100% 100%, 100% 100%, 150px 150px, 400% 400%;
   animation: gradientBG 20s ease infinite;
   font-family: "Geist", sans-serif;
 }
@@ -123,26 +128,99 @@ body {
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #454654;
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--outline-variant) 40%, transparent);
 }
 
-/* ============================================
-   Mercury Component Classes
-   ============================================ */
+/* ------------------------------------- */
+/* PREMIUM MARKDOWN STYLING FOR AI CHAT  */
+/* ------------------------------------- */
+.markdown-body {
+  color: var(--on-surface);
+  font-size: 13px;
+  line-height: 1.65;
+}
+.markdown-body p {
+  margin-bottom: 0.75rem;
+}
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+.markdown-body strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  color: var(--on-surface);
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.markdown-body h3 {
+  font-size: 1.1em;
+}
+.markdown-body ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.markdown-body ol {
+  list-style-type: decimal;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.markdown-body li {
+  margin-bottom: 0.25rem;
+}
+.markdown-body code {
+  font-family: "Geist Mono", monospace;
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+  color: var(--primary-fixed);
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+}
+.markdown-body pre {
+  background: var(--surface-bright);
+  border: 1px solid color-mix(in srgb, var(--outline-variant) 30%, transparent);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 0.75rem;
+}
+.markdown-body pre code {
+  background: transparent;
+  color: var(--on-surface);
+  padding: 0;
+  font-size: 0.85em;
+}
+
+/* ========================================================== */
+/* END OF SYSTEM CORE                                         */
+/* ============================================ */
 
 .glass-panel {
-  background: rgba(25, 25, 35, 0.4);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(30, 30, 42, 0.4);
+  backdrop-filter: blur(24px) saturate(120%);
+  -webkit-backdrop-filter: blur(24px) saturate(120%);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-heavy {
+  background: rgba(23, 23, 33, 0.7);
+  backdrop-filter: blur(32px) saturate(150%);
+  -webkit-backdrop-filter: blur(32px) saturate(150%);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08), 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
 .mercury-glow {
-  box-shadow: 0 0 20px 2px rgba(187, 195, 255, 0.15);
+  box-shadow: 0 0 20px 2px rgba(187, 195, 255, 0.15), inset 0 0 10px rgba(187, 195, 255, 0.05);
+  transition: box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
 .mercury-glow:hover {
-  box-shadow: 0 0 30px 6px rgba(82, 102, 235, 0.4);
+  box-shadow: 0 0 30px 6px rgba(82, 102, 235, 0.4), inset 0 0 15px rgba(187, 195, 255, 0.1);
 }
 
 .mercury-glow-static {

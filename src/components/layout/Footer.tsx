@@ -7,10 +7,11 @@ import RevealOnScroll from "@/components/effects/RevealOnScroll";
 export default function Footer() {
   return (
     <RevealOnScroll>
-      <footer className="relative w-full py-16 border-t border-outline-variant/20">
-        <div className="max-w-[1440px] mx-auto px-5 md:px-16">
+      <footer className="relative w-full mt-12 border-t border-outline-variant/30 glass-panel">
+        <div className="absolute inset-0 bg-gradient-to-t from-surface/80 to-transparent pointer-events-none" />
+        <div className="max-w-[1440px] mx-auto px-5 md:px-16 py-16 relative z-10">
           {/* Top Section */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-12 mb-16">
             {/* Brand */}
             <div className="md:col-span-4">
               <div className="font-[Sora] text-primary text-[28px] md:text-[32px] font-medium tracking-[0.02em] mb-4">
