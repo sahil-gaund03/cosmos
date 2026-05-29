@@ -578,7 +578,7 @@ copies of the Software...
 
 <div align="center">
 
-<img src="https://avatars.githubusercontent.com/sahilgaund" alt="Sahil Gaund" width="100" style="border-radius:50%;border:2px solid #4f8ef7" />
+<img src="https://avatars.githubusercontent.com/sahil-gaund03" alt="Sahil Gaund" width="100" style="border-radius:50%;border:2px solid #4f8ef7" />
 
 ### Sahil Gaund
 
