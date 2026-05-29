@@ -585,9 +585,7 @@ copies of the Software...
 *Full-Stack Engineer · Space Enthusiast · Open-Source Builder*
 
 [![GitHub](https://img.shields.io/badge/GitHub-sahil--gaund03-181717?style=for-the-badge&logo=github)](https://github.com/sahil-gaund03)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-sahilgaund-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/sahil-gaund03)
-[![Portfolio](https://img.shields.io/badge/Portfolio-sahilgaund.dev-FF5733?style=for-the-badge&logo=vercel)](https://sahilgaund.dev)
-[![Twitter / X](https://img.shields.io/badge/Twitter-@sahilgaund-000000?style=for-the-badge&logo=x)](https://x.com/sahilgaund)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-sahil--gaund03-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/sahilgaund03)
 
 </div>
 
