@@ -11,10 +11,7 @@ export async function POST(request: Request) {
     messages = body.messages;
 
     if (!apiKey) {
-      return NextResponse.json(
-        { error: "API Key is missing. Please set GEMINI_API_KEY in your environment variables." },
-        { status: 500 }
-      );
+      throw new Error("API Key is missing. Please set GEMINI_API_KEY in your environment variables.");
     }
 
     if (!messages || !Array.isArray(messages)) {
