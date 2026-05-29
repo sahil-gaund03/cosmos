@@ -25,17 +25,14 @@ export async function POST(request: Request) {
       parts: [{ text: msg.text }]
     }));
 
-    // Inject system instruction at the beginning
-    contents.unshift({
-      role: "user",
-      parts: [{ text: "System Instruction: You are Nexus Cosmos, a highly intelligent space intelligence co-pilot and AI assistant. Keep responses highly scientific, structured, and space-tech themed. Focus primarily on astronomy, space exploration, physics, NASA, and orbital mechanics. Use beautiful markdown formatting." }]
-    });
-
     const ai = new GoogleGenAI({ apiKey });
     
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
-      contents: contents
+      contents: contents,
+      config: {
+        systemInstruction: "You are Nexus Cosmos, a highly intelligent space intelligence co-pilot and AI assistant. Keep responses highly scientific, structured, and space-tech themed. Focus primarily on astronomy, space exploration, physics, NASA, and orbital mechanics. Use beautiful markdown formatting."
+      }
     });
 
     if (response.text) {
