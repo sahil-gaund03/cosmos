@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- BANNER -->
-<img src="public/images/hero-earth.png" alt="NEXUS COSMOS Banner" width="100%" style="border-radius:12px;margin-bottom:12px;" />
+<img src="https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/hero-earth.png" alt="NEXUS COSMOS Banner" width="100%" style="border-radius:12px;margin-bottom:12px;" />
 
 <br/>
 
@@ -27,14 +27,14 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Deploy Status](https://img.shields.io/badge/Deploy-Live-success?style=flat-square&logo=vercel)](https://nexus-cosmos.dev)
-[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=sahilgaund.nexus-cosmos)](https://github.com/sahilgaund/nexus-cosmos)
-![GitHub Stars](https://img.shields.io/github/stars/sahilgaund/nexus-cosmos?style=flat-square&color=gold)
-![GitHub Forks](https://img.shields.io/github/forks/sahilgaund/nexus-cosmos?style=flat-square&color=blue)
+[![Deploy Status](https://img.shields.io/badge/Deploy-Live-success?style=flat-square&logo=vercel)](https://nexus-cosmos.vercel.app)
+[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=sahil-gaund03.cosmos)](https://github.com/sahil-gaund03/cosmos)
+![GitHub Stars](https://img.shields.io/github/stars/sahil-gaund03/cosmos?style=flat-square&color=gold)
+![GitHub Forks](https://img.shields.io/github/forks/sahil-gaund03/cosmos?style=flat-square&color=blue)
 
 <br/>
 
-**[🚀 Live Demo](https://nexus-cosmos.dev)** &nbsp;·&nbsp; **[📸 Screenshots](#-screenshots--gallery)** &nbsp;·&nbsp; **[📖 Docs](#-installation)** &nbsp;·&nbsp; **[🤝 Contribute](#-contributing)**
+**[🚀 Live Demo](https://nexus-cosmos.vercel.app)** &nbsp;·&nbsp; **[📸 Screenshots](#-screenshots--gallery)** &nbsp;·&nbsp; **[📖 Docs](#-installation)** &nbsp;·&nbsp; **[🤝 Contribute](#-contributing)**
 
 </div>
 
@@ -65,13 +65,11 @@ NEXUS COSMOS exists for the same reason. Not because building this was easy — 
 
 | 🌍 Hero Experience | 🤖 AI Assistant | 🪐 Solar System |
 |:-:|:-:|:-:|
-| ![Hero](.github/screenshots/hero.png) | ![AI](.github/screenshots/ai-assistant.png) | ![Solar](.github/screenshots/solar-system.png) |
+| [![Hero](https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/hero-earth.png)](https://nexus-cosmos.vercel.app) | [![AI](https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/iss-hologram.png)](https://nexus-cosmos.vercel.app/ai-assistant) | [![Solar](https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/jupiter-view.png)](https://nexus-cosmos.vercel.app/solar-system) |
 
-| 🛰️ ISS Tracker | 🌠 NASA Gallery | 🌩️ Space Weather |
+| 🛰️ ISS Tracker | 🌠 NASA Gallery | 🌌 Deep Space |
 |:-:|:-:|:-:|
-| ![ISS](.github/screenshots/iss-tracker.png) | ![Gallery](.github/screenshots/nasa-gallery.png) | ![Weather](.github/screenshots/space-weather.png) |
-
-> *Replace placeholders above with actual screenshots from your deployment.*
+| [![ISS](https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/iss-hologram.png)](https://nexus-cosmos.vercel.app/iss-tracker) | [![Gallery](https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/carina-nebula.png)](https://nexus-cosmos.vercel.app/nasa-gallery) | [![Space](https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/andromeda-galaxy.png)](https://nexus-cosmos.vercel.app/nasa-gallery) |
 
 <br/>
 
@@ -359,7 +357,7 @@ nexus-cosmos/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/sahilgaund/nexus-cosmos.git
+git clone https://github.com/sahil-gaund03/cosmos.git
 cd nexus-cosmos
 ```
 
@@ -450,42 +448,42 @@ API_PASSWORD=
 **🌍 Cinematic Hero**
 > *Full-viewport Earth backdrop with real-time ISS telemetry cards*
 
-![Hero Page](.github/screenshots/hero.png)
+[![Hero Page](https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/hero-earth.png)](https://nexus-cosmos.vercel.app)
 
 ---
 
-**🤖 AI Astronomy Assistant**
-> *Gemini-powered streaming chat — ask anything about space*
+**🌌 Carina Nebula — NASA Deep Space**
+> *High-res NASA imagery streamed directly into the gallery*
 
-![AI Assistant](.github/screenshots/ai-assistant.png)
+[![Carina Nebula](https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/carina-nebula.png)](https://nexus-cosmos.vercel.app/nasa-gallery)
 
 ---
 
-**🪐 3D Solar System**
+**🪐 Solar System — Jupiter**
 > *Interactive Three.js solar system with per-planet dossier overlay*
 
-![Solar System](.github/screenshots/solar-system.png)
+[![Jupiter View](https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/jupiter-view.png)](https://nexus-cosmos.vercel.app/solar-system)
 
 ---
 
-**🛰️ ISS Tracker**
-> *Live orbital tracking map with telemetry HUD and radar sweep*
+**🔴 Mars Surface**
+> *Planetary surface imagery and exploration data*
 
-![ISS Tracker](.github/screenshots/iss-tracker.png)
-
----
-
-**🌠 NASA Gallery**
-> *APOD hero + searchable deep-space imagery with lightbox*
-
-![NASA Gallery](.github/screenshots/nasa-gallery.png)
+[![Mars Surface](https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/mars-surface.png)](https://nexus-cosmos.vercel.app/solar-system)
 
 ---
 
-**📱 Mobile UI**
-> *Fully responsive with drawer navigation*
+**🌌 Andromeda Galaxy**
+> *Explore our galactic neighbors through the NASA gallery*
 
-![Mobile](.github/screenshots/mobile.png)
+[![Andromeda Galaxy](https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/andromeda-galaxy.png)](https://nexus-cosmos.vercel.app/nasa-gallery)
+
+---
+
+**🛰️ ISS Hologram Visualization**
+> *Futuristic ISS model used across the tracking interface*
+
+[![ISS Hologram](https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/iss-hologram.png)](https://nexus-cosmos.vercel.app/iss-tracker)
 
 </div>
 
@@ -586,8 +584,8 @@ copies of the Software...
 
 *Full-Stack Engineer · Space Enthusiast · Open-Source Builder*
 
-[![GitHub](https://img.shields.io/badge/GitHub-sahilgaund-181717?style=for-the-badge&logo=github)](https://github.com/sahilgaund)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-sahilgaund-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/sahilgaund)
+[![GitHub](https://img.shields.io/badge/GitHub-sahil--gaund03-181717?style=for-the-badge&logo=github)](https://github.com/sahil-gaund03)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-sahilgaund-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/sahil-gaund03)
 [![Portfolio](https://img.shields.io/badge/Portfolio-sahilgaund.dev-FF5733?style=for-the-badge&logo=vercel)](https://sahilgaund.dev)
 [![Twitter / X](https://img.shields.io/badge/Twitter-@sahilgaund-000000?style=for-the-badge&logo=x)](https://x.com/sahilgaund)
 
@@ -599,7 +597,7 @@ copies of the Software...
 
 <div align="center">
 
-<img src="public/images/nebula-preview.png" alt="Nebula" width="60%" style="border-radius:8px;opacity:0.9" />
+<img src="https://raw.githubusercontent.com/sahil-gaund03/cosmos/main/public/images/nebula-preview.png" alt="Nebula" width="60%" style="border-radius:8px;opacity:0.9" />
 
 <br/><br/>
 
@@ -611,7 +609,7 @@ copies of the Software...
 
 <br/>
 
-[![Star this repo](https://img.shields.io/github/stars/sahilgaund/nexus-cosmos?style=social)](https://github.com/sahilgaund/nexus-cosmos)
+[![Star this repo](https://img.shields.io/github/stars/sahil-gaund03/cosmos?style=social)](https://github.com/sahil-gaund03/cosmos)
 
 <br/>
 
