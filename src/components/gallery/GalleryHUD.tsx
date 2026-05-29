@@ -95,7 +95,7 @@ export default function GalleryHUD() {
       NEBULAE: ["nebulae"],
       STARS: ["stars", "sun"],
       "BLACK HOLES": ["black holes"],
-      HUBBLE: ["hubble"],
+      GALAXY: ["galaxy"],
       "JAMES WEBB": ["james webb"],
       "NASA MISSIONS": ["nasa missions"],
     };

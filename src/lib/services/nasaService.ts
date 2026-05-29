@@ -37,7 +37,7 @@ const MOCK_PHOTOS: NASAPhoto[] = [
     title: "Pillars of Creation in the Eagle Nebula",
     date: "2022-10-19",
     center: "STScI",
-    explanation: "This composite image from the Hubble Space Telescope shows the Pillars of Creation inside the Eagle Nebula (M16). Gaseous towers are carved by stellar winds from hot, young stars inside. High-energy radiation causes the hydrogen and nitrogen atoms to emit intense red and green light.",
+    explanation: "This composite image shows the Pillars of Creation inside the Eagle Nebula (M16). Gaseous towers are carved by stellar winds from hot, young stars inside. High-energy radiation causes the hydrogen and nitrogen atoms to emit intense red and green light.",
     thumbUrl: "/images/nebula-preview.png",
     hdUrl: "/images/nebula-preview.png",
     category: "nebulae",
@@ -146,8 +146,8 @@ const MOCK_PHOTOS: NASAPhoto[] = [
     id: "proxima-centauri-star",
     title: "Proxima Centauri: Our Nearest Stellar Neighbor",
     date: "2021-09-02",
-    center: "ESA/Hubble",
-    explanation: "A Hubble Space Telescope view of the red dwarf star Proxima Centauri, located just 4.24 light-years away in the Alpha Centauri system. Although it is the nearest star to the Sun, it is too faint to be seen with the naked eye.",
+    center: "ESA",
+    explanation: "A deep space view of the red dwarf star Proxima Centauri, located just 4.24 light-years away in the Alpha Centauri system. Although it is the nearest star to the Sun, it is too faint to be seen with the naked eye.",
     thumbUrl: "/images/proxima-centauri.png",
     hdUrl: "/images/proxima-centauri.png",
     category: "stars",
@@ -177,7 +177,7 @@ const MOCK_PHOTOS: NASAPhoto[] = [
     title: "Mystic Mountain in the Carina Nebula",
     date: "2010-04-23",
     center: "STScI",
-    explanation: "Hubble Space Telescope capture of a three-light-year-tall pillar of gas and dust inside the Carina Nebula. Heated gas streams from young stars inside the pillar, sculpting dense dust spires.",
+    explanation: "A capture of a three-light-year-tall pillar of gas and dust inside the Carina Nebula. Heated gas streams from young stars inside the pillar, sculpting dense dust spires.",
     thumbUrl: "/images/carina-nebula.png",
     hdUrl: "/images/carina-nebula.png",
     category: "nebulae",
@@ -278,7 +278,7 @@ export async function searchNASAGallery(query: string): Promise<NASAPhoto[]> {
       else if (txt.includes("earth")) category = "earth";
       else if (txt.includes("jupiter")) category = "jupiter";
       else if (txt.includes("saturn")) category = "saturn";
-      else if (txt.includes("hubble")) category = "hubble";
+      else if (txt.includes("galaxy")) category = "galaxy";
       else if (txt.includes("webb")) category = "james webb";
       else if (txt.includes("black hole")) category = "black holes";
       else if (txt.includes("nebula")) category = "nebulae";

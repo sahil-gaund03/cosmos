@@ -74,26 +74,33 @@ export default function AIChatConsole() {
     setIsGenerating(true);
 
     try {
+      // Create context array including the new message
+      const contextMessages = [...messages, userMsg].map(m => ({
+        sender: m.sender,
+        text: m.text
+      }));
+
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt: textToSend }),
+        body: JSON.stringify({ messages: contextMessages }),
       });
 
-      if (!response.ok) throw new Error();
       const data = await response.json();
+      
+      if (!response.ok) throw new Error(data.error || "Unknown API Error");
       
       if (data.response) {
         startTypewriter(data.response);
       } else {
         throw new Error();
       }
-    } catch {
+    } catch (err: any) {
       setIsGenerating(false);
       const errMsg: ChatMessage = {
         id: generateMessageId(),
         sender: "ai",
-        text: "ALERT: DOWNLINK DECODING MALFUNCTION // INTERCEPTING PACKETS FAILS // RETRY",
+        text: `ALERT: DECODING MALFUNCTION // ${err.message || "RETRY"}`,
       };
       setMessages((prev) => [...prev, errMsg]);
     }

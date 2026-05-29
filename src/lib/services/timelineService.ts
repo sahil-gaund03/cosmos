@@ -151,20 +151,6 @@ const MOCK_EVENTS: TimelineEvent[] = [
     agency: "NASA",
   },
   {
-    id: "hubble-deployment",
-    title: "Hubble Space Telescope Deployment",
-    date: "1990-04-25T00:00:00Z",
-    displayDate: "April 25, 1990",
-    year: 1990,
-    era: "shuttle-era",
-    description:
-      "Space Shuttle Discovery deployed the Hubble Space Telescope into a 547-km orbit, giving humanity its sharpest-ever view of the cosmos. After a corrective servicing mission in 1993 fixed a mirror flaw, Hubble revolutionized every branch of astrophysics — from measuring the expansion rate of the universe to imaging protoplanetary disks around young stars.",
-    significance:
-      "The eye above the atmosphere — over 1.5 million observations and counting.",
-    icon: "visibility",
-    agency: "NASA / ESA",
-  },
-  {
     id: "iss-construction",
     title: "ISS Construction Begins — Zarya Module",
     date: "1998-11-20T00:00:00Z",

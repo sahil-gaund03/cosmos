@@ -11,7 +11,7 @@ export default function NASAGalleryPreview() {
   const previewImages = [
     {
       src: "/images/nebula-preview.png",
-      alt: "Deep space nebula captured by Hubble Space Telescope",
+      alt: "Deep space nebula captured by Space Telescope",
       title: "Carina Nebula",
       span: "row-span-2",
     },

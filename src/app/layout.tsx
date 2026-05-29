@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "satellite tracking",
     "rocket launches",
     "solar system",
-    "Hubble",
+    "solar system",
     "space intelligence",
   ],
   authors: [{ name: "NEXUS COSMOS" }],

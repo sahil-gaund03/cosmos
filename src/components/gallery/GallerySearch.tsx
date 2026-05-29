@@ -22,7 +22,7 @@ export default function GallerySearch({
     "NEBULAE",
     "STARS",
     "BLACK HOLES",
-    "HUBBLE",
+    "GALAXY",
     "JAMES WEBB",
     "NASA MISSIONS",
     "FAVORITES"
@@ -42,7 +42,7 @@ export default function GallerySearch({
           type="text"
           value={inputVal}
           onChange={(e) => setInputVal(e.target.value)}
-          placeholder="Query NASA media archive (e.g. Hubble, Artemis)..."
+          placeholder="Query NASA media archive (e.g. Orion, Artemis)..."
           className="relative w-full glass-panel border border-outline-variant/30 focus:border-primary/50 focus:bg-surface-container/80 px-6 py-4 rounded-lg text-sm text-on-surface placeholder:text-outline-variant transition-all duration-300 font-mono shadow-inner outline-none"
         />
         <button

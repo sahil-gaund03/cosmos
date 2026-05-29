@@ -68,32 +68,6 @@ export default function ISSPreviewSection() {
                 </p>
               </div>
             </Link>
-
-            {/* Hubble Explorer Card */}
-            <Link
-              href="/hubble"
-              className="group flex-1 min-h-[200px] md:min-h-[234px] p-6 md:p-8 rounded-lg border border-outline-variant/40 bg-surface-container
-                flex flex-col justify-between
-                hover:bg-surface-bright hover:border-primary/30 transition-all duration-300 cursor-pointer
-                hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(82,102,235,0.15)]"
-            >
-              <div className="flex justify-between items-start">
-                <span className="material-symbols-outlined text-primary text-4xl group-hover:scale-110 transition-transform duration-300">
-                  auto_awesome
-                </span>
-                <span className="material-symbols-outlined text-outline group-hover:text-primary transition-colors duration-300">
-                  arrow_forward
-                </span>
-              </div>
-              <div>
-                <h4 className="text-label-caps text-on-surface mb-1">
-                  Hubble Explorer
-                </h4>
-                <p className="text-xs text-on-surface-variant">
-                  Voyage through the cosmic horizons of Hubble&apos;s eye.
-                </p>
-              </div>
-            </Link>
           </div>
         </RevealOnScroll>
       </div>
