@@ -53,7 +53,7 @@ function applySecureHeaders(res: NextResponse) {
   return res;
 }
 
-export async function middleware(req: NextRequest) {
+export default async function proxy(req: NextRequest) {
   // 1. Check Rate Limit
   const rateLimitResponse = applyRateLimit(req);
   if (rateLimitResponse) return rateLimitResponse;

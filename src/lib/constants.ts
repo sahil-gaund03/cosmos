@@ -26,9 +26,10 @@ export const NAV_LINKS = [
 
 // Footer links
 export const FOOTER_LINKS = [
-  { label: "Privacy Protocol", href: "/privacy" },
-  { label: "Security Clearance", href: "/security" },
-  { label: "Data Policy", href: "/data-policy" },
+  { label: "Privacy Policy", href: "/privacy" },
+  { label: "Terms", href: "/terms" },
+  { label: "Disclaimer", href: "/disclaimer" },
+  { label: "License", href: "/license" },
 ] as const;
 
 // Telemetry data for the hero section

@@ -77,19 +77,6 @@ export default function Navbar() {
 
         {/* Right Actions */}
         <div className="flex items-center gap-3 md:gap-4">
-          {/* Desktop Icons */}
-          <div className="hidden xl:flex gap-4 mr-2">
-            <button className="text-on-surface-variant hover:text-primary transition-colors" aria-label="Profile">
-              <span className="material-symbols-outlined">account_circle</span>
-            </button>
-            <button className="text-on-surface-variant hover:text-primary transition-colors" aria-label="Notifications">
-              <span className="material-symbols-outlined">notifications</span>
-            </button>
-            <button className="text-on-surface-variant hover:text-primary transition-colors" aria-label="Settings">
-              <span className="material-symbols-outlined">settings</span>
-            </button>
-          </div>
-
           {/* CTA Button */}
           <Link
             href="/iss-tracker"
