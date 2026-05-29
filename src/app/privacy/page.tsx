@@ -99,7 +99,7 @@ export default function PrivacyPage() {
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2 text-primary font-medium">
                   <span className="material-symbols-outlined text-[18px]">mail</span>
-                  <span>security@nexus-cosmos.dev</span>
+                  <span>sahilgaund42@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2 text-on-surface-variant">
                   <span className="material-symbols-outlined text-[18px]">public</span>
