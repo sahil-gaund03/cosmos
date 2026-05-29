@@ -68,6 +68,7 @@ export default function RootLayout({
       className={`${sora.variable} ${geist.variable} dark scroll-smooth`}
     >
       <head>
+        <meta name="google-site-verification" content="u2MdUjL6aTeE_R0wOt9GqkizXZFqRxvQaR6mm8L58TI" />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
